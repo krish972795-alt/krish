@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo Bistro | Restaurant Website Demo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+:root{--gold:#f2b35e;--bg:#120c09}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:radial-gradient(circle at 70% 0,#3a2214,var(--bg) 60%) fixed;color:#f5ece4;line-height:1.6;overflow-x:hidden}
+.bar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 6%;font-size:.82rem;background:#000;color:#aaa}
+.bar a{color:var(--gold);text-decoration:none}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 6%}
+.brand{font:700 1.5rem Georgia,serif;color:var(--gold)}
+header nav a{color:#e8d9cc;text-decoration:none;margin-left:24px;transition:.3s}header nav a:hover{color:var(--gold)}
+.hero{min-height:80vh;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:30px;padding:0 6%}
+.hero h1{font:700 clamp(3rem,9vw,6.5rem)/.95 Georgia,serif;letter-spacing:-.03em}
+.hero h1 span{color:var(--gold);font-style:italic}
+.hero p{color:#c9b8a8;max-width:440px;margin:22px 0 30px}
+.btn{display:inline-block;padding:14px 32px;border-radius:50px;background:var(--gold);color:#1a0f08;font:700 1rem 'Segoe UI',sans-serif;text-decoration:none;border:0;cursor:pointer;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(242,179,94,.4)}
+.pw{perspective:900px;display:grid;place-items:center}
+.plate{--rx:35deg;--ry:0deg;width:min(340px,78vw);aspect-ratio:1;border-radius:50%;position:relative;background:radial-gradient(circle at 35% 30%,#fff,#d9d0c8 55%,#8b7d70);box-shadow:0 50px 80px #000,inset 0 0 0 14px #eee6de;transform:rotateX(var(--rx)) rotateY(var(--ry));transition:transform .2s;animation:fl 5s ease-in-out infinite}
+.plate::before{content:"";position:absolute;inset:18%;border-radius:50%;background:radial-gradient(circle at 40% 35%,#ffcf7a,#e0792b 70%);box-shadow:inset 0 -12px 30px rgba(0,0,0,.35)}
+.plate i{position:absolute;border-radius:50%;box-shadow:0 6px 10px rgba(0,0,0,.4)}
+.plate i:nth-child(1){width:22%;height:22%;background:#5fbf6a;top:30%;left:28%}
+.plate i:nth-child(2){width:18%;height:18%;background:#e8453c;top:46%;left:52%}
+.plate i:nth-child(3){width:14%;height:14%;background:#ffe08a;top:34%;left:56%}
+@keyframes fl{50%{translate:0 -14px}}
+.sec{padding:80px 6%;max-width:1200px;margin:auto}
+h2{font:700 clamp(2rem,5vw,2.8rem) Georgia,serif;margin-bottom:30px}h2 span{color:var(--gold)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .e{font-size:2.4rem}.card h3{margin:8px 0 4px}.card p{color:#b9a898;font-size:.93rem}.card b{color:var(--gold);display:block;margin-top:10px}
+.g{height:160px;border-radius:18px;display:grid;place-items:center;font-size:3.2rem;transition:.4s}.g:hover{transform:scale(1.05) rotate(-1deg)}
+.g1{background:linear-gradient(135deg,#7a3b12,#e0792b)}.g2{background:linear-gradient(135deg,#1f4d2b,#5fbf6a)}.g3{background:linear-gradient(135deg,#5a1a2a,#e8453c)}.g4{background:linear-gradient(135deg,#3a2a6b,#8b5cf6)}
+form{display:grid;gap:14px;max-width:520px;background:rgba(255,255,255,.06);padding:28px;border-radius:20px;border:1px solid rgba(255,255,255,.1)}
+input,select{padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.35);color:#fff;font:inherit}
+select option{background:#120c09}
+#m{min-height:1.4em}
+footer{text-align:center;padding:30px;color:#8d7d6f;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding-top:10px}.hero p{margin-inline:auto}header nav{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body>
+<div class="bar"><span>Demo / concept website by KJ Tech Solutions. Not a real restaurant.</span><a href="../index.html#portfolio">&larr; Back to KJ Tech Solutions</a></div>
+<header><div class="brand">Demo Bistro</div><nav><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#book">Book a Table</a></nav></header>
+<section class="hero">
+<div><h1>Taste That <span>Feels</span> Like Home.</h1><p>Fresh ingredients, warm flavours and a cozy table waiting for you. A concept website for a small restaurant.</p><a href="#book" class="btn">Book a Table</a></div>
+<div class="pw"><div class="plate" id="plate"><i></i><i></i><i></i></div></div>
+</section>
+<section class="sec" id="menu"><h2>Our <span>Menu</span></h2>
+<div class="grid">
+<div class="card"><div class="e">🧆</div><h3>Paneer Tikka Platter</h3><p>Smoky grilled paneer with mint chutney.</p><b>&#8377;249</b></div>
+<div class="card"><div class="e">🍛</div><h3>Butter Chicken</h3><p>Creamy tomato gravy with soft naan.</p><b>&#8377;329</b></div>
+<div class="card"><div class="e">🍚</div><h3>Veg Biryani</h3><p>Fragrant rice, spices and fresh raita.</p><b>&#8377;219</b></div>
+<div class="card"><div class="e">🍕</div><h3>Margherita Pizza</h3><p>Stone-baked with basil and mozzarella.</p><b>&#8377;279</b></div>
+<div class="card"><div class="e">🍝</div><h3>Pasta Alfredo</h3><p>Rich white sauce with garlic bread.</p><b>&#8377;259</b></div>
+<div class="card"><div class="e">🍮</div><h3>Gulab Jamun</h3><p>Warm, soft and sweet to finish.</p><b>&#8377;99</b></div>
+</div><p style="margin-top:14px;color:#8d7d6f;font-size:.85rem">Sample dishes and prices for the demo.</p></section>
+<section class="sec" id="gallery"><h2>Photo <span>Gallery</span></h2>
+<div class="grid"><div class="g g1">🍕</div><div class="g g2">🥗</div><div class="g g3">🍛</div><div class="g g4">🍰</div></div>
+<p style="margin-top:14px;color:#8d7d6f;font-size:.85rem">Placeholder tiles. A real client project would use their own food photos here.</p></section>
+<section class="sec" id="book"><h2>Book a <span>Table</span></h2>
+<form id="f" novalidate><input name="n" placeholder="Your name"><select name="g"><option>2 guests</option><option>4 guests</option><option>6 guests</option></select><input name="d" type="date"><button class="btn" type="submit">Reserve</button><p id="m" role="status"></p></form></section>
+<footer>&copy; Demo Bistro &middot; Concept project by KJ Tech Solutions</footer>
+<script>
+const p=document.getElementById('plate');
+document.addEventListener('mousemove',e=>{p.style.setProperty('--ry',(e.clientX/innerWidth-.5)*40+'deg');p.style.setProperty('--rx',(35-(e.clientY/innerHeight-.5)*30)+'deg')});
+document.getElementById('f').onsubmit=e=>{e.preventDefault();const f=e.target,m=document.getElementById('m');
+if(f.n.value.trim().length<2||!f.d.value){m.style.color='#ff8a8a';m.textContent='Please enter your name and pick a date.';return}
+m.style.color='#8fe3a0';m.textContent='Thanks '+f.n.value.trim()+'! Your table request is noted (demo only, nothing is sent).';f.reset()};
+</script></body></html>

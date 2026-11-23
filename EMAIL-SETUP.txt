@@ -1,0 +1,14 @@
+KJ TECH SOLUTIONS — CONTACT FORM EMAIL SETUP
+
+The contact form is connected to this Formspree endpoint:
+https://formspree.io/f/moedpded
+
+Destination inbox: krish972795@gmail.com
+
+Before relying on it:
+1. In Formspree, confirm that the form is verified and configured to deliver to krish972795@gmail.com.
+2. Upload the updated website files to your hosting provider.
+3. Submit a test enquiry from the live website.
+4. Confirm that the test email arrives in your inbox (and check Spam).
+
+Never put your Gmail password in website code.

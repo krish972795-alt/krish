@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KJ Tech Solutions - Smart Digital Solutions for Growing Businesses.">
+  <title>KJ Tech Solutions | Smart Digital Solutions for Growing Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="bg"></canvas>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#home" class="logo">KJ <span>Tech Solutions</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav id="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact" class="btn small">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <span class="pill">New digital solutions initiative</span>
+        <h1>We Build Digital Experiences That <span class="grad">Grow Businesses.</span></h1>
+        <p>KJ Tech Solutions helps small businesses look professional online with modern websites, scroll-stopping videos, standout graphics and smart AI tools.</p>
+        <div class="btns">
+          <a href="#portfolio" class="btn">Explore Our Work</a>
+          <a href="#contact" class="btn ghost">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- 3D scene (pure CSS, moves with your mouse) -->
+      <div class="stage">
+        <div class="tilt3d" id="tilt3d">
+          <div class="ring"></div>
+          <div class="ring r2"></div>
+          <div class="cube">
+            <div>Web</div><div>Video</div><div>Design</div><div>AI</div><div>KJ</div><div>KJ</div>
+          </div>
+          <span class="chip c1">Websites</span>
+          <span class="chip c2">Video</span>
+          <span class="chip c3">Graphics</span>
+          <span class="chip c4">AI Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="title reveal">
+        <h2>About <span class="grad">Us</span></h2>
+        <p>Fresh ideas, built for small businesses.</p>
+      </div>
+      <div class="about reveal">
+        <div class="glass">
+          <p>KJ Tech Solutions is a new digital solutions initiative focused on helping small businesses improve their online presence. We are just getting started, and that means every project gets our full attention and energy.</p>
+          <p>From a clean website to a polished promo video, we turn your ideas into digital work that builds trust and brings in customers.</p>
+        </div>
+        <div class="facts">
+          <div class="glass" data-tilt><b>4</b><span>Core services</span></div>
+          <div class="glass" data-tilt><b>New</b><span>Fresh ideas</span></div>
+          <div class="glass" data-tilt><b>You</b><span>Always first</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="title reveal">
+        <h2>Our <span class="grad">Services</span></h2>
+        <p>Everything a growing business needs to shine online.</p>
+      </div>
+      <div class="grid reveal">
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Website Development</h3>
+          <p>Fast, mobile-friendly websites that make your business look professional and easy to find.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg></div>
+          <h3>Video Editing</h3>
+          <p>Promo videos, reels and short clips with smooth cuts, music and motion that hold attention.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.6 7.6"/></svg></div>
+          <h3>Graphic Design</h3>
+          <p>Logos, posters and social media designs that give your brand a clear and memorable look.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg></div>
+          <h3>AI Digital Solutions</h3>
+          <p>Simple AI tools and chat assistants that save time and help you answer customers faster.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="title reveal">
+        <h2>Our <span class="grad">Portfolio</span></h2>
+        <p>Demo and concept projects that show what we can create for you.</p>
+      </div>
+      <div class="grid reveal">
+        <article class="glass work" data-tilt>
+          <div class="thumb"><img src="images/restaurant.svg" alt="Restaurant website demo preview" loading="lazy"><span class="badge">Demo / Concept</span></div>
+          <div class="info"><h3>Restaurant Website Demo</h3><p>A concept website with menu, photo gallery and table-booking layout for a small restaurant.</p><a class="view" href="demos/restaurant.html" target="_blank" rel="noopener">View demo website &rarr;</a></div>
+        </article>
+        <article class="glass work" data-tilt>
+          <div class="thumb"><img src="images/video.svg" alt="Promotional video editing demo preview" loading="lazy"><span class="badge">Demo / Concept</span></div>
+          <div class="info"><h3>Promotional Video Editing Demo</h3><p>A sample promo reel showing cuts, transitions, text animation and music sync.</p><a class="view" href="demos/promo-reel.html" target="_blank" rel="noopener">Play demo reel &rarr;</a></div>
+        </article>
+        <article class="glass work" data-tilt>
+          <div class="thumb"><img src="images/poster.svg" alt="Clothing brand poster demo preview" loading="lazy"><span class="badge">Demo / Concept</span></div>
+          <div class="info"><h3>Clothing Brand Poster Demo</h3><p>A concept poster for a fashion brand with bold typography and a strong colour palette.</p><a class="view" href="images/poster-full.svg" target="_blank" rel="noopener">View full poster &rarr;</a></div>
+        </article>
+        <article class="glass work" data-tilt>
+          <div class="thumb"><img src="images/ai.svg" alt="AI business assistant demo preview" loading="lazy"><span class="badge">Demo / Concept</span></div>
+          <div class="info"><h3>AI Business Assistant Demo</h3><p>A concept AI chat assistant that answers common customer questions for a small business.</p><a class="view" href="demos/ai-assistant.html" target="_blank" rel="noopener">Try demo assistant &rarr;</a></div>
+        </article>
+      </div>
+      <p class="note">These are demo and concept projects created to show our skills. They are not real client projects.</p>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why">
+      <div class="title reveal">
+        <h2>Why Choose <span class="grad">Us</span></h2>
+        <p>What you can expect when you work with KJ Tech Solutions.</p>
+      </div>
+      <div class="grid reveal">
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></div>
+          <h3>Creative Ideas</h3><p>Original thinking that helps your business stand out from the crowd.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Modern Designs</h3><p>Clean, current looks that work beautifully on phones, tablets and computers.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></div>
+          <h3>Affordable Solutions</h3><p>Fair prices made for small businesses and growing budgets.</p>
+        </article>
+        <article class="glass" data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div>
+          <h3>Focus on Quality</h3><p>Careful, detailed work, checked before it is delivered to you.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="title reveal">
+        <h2>Contact <span class="grad">Us</span></h2>
+        <p>Tell us about your project and we will get back to you.</p>
+      </div>
+      <div class="contact reveal">
+        <div class="glass">
+          <h3>Get in touch</h3>
+          <div class="info-item"><b>Email</b>your-email@example.com</div>
+          <div class="info-item"><b>Phone</b>Your phone number here</div>
+          <div class="info-item"><b>Location</b>Your city, country</div>
+          <div class="info-item"><b>Social media</b>Your social media links here</div>
+        </div>
+        <form class="glass" id="form" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name"><span class="err"></span></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"><span class="err"></span></div>
+          <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" placeholder="+91 98765 43210"><span class="err"></span></div>
+          <div class="field"><label for="service">Service required</label>
+            <select id="service" name="service">
+              <option value="">Choose a service</option>
+              <option>Website Development</option>
+              <option>Video Editing</option>
+              <option>Graphic Design</option>
+              <option>AI Digital Solutions</option>
+            </select><span class="err"></span></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea><span class="err"></span></div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="ok" id="ok" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="yr"></span> KJ Tech Solutions. Smart Digital Solutions for Growing Businesses.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
